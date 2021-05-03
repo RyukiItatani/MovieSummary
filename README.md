@@ -8,5 +8,6 @@
 - Youtube動画の字幕の取得にはYoutubeTranscriptApiを使用
 - 要約には朝日新聞社が公開している長文を要約する無料APIを使用
 ## 使用API
-YoutubeTranscriptApi：https://pypi.org/project/youtube-transcript-api/
-朝日新聞要約API：https://cl.asahi.com/api_data/longsum.html
+- YoutubeTranscriptApi：https://pypi.org/project/youtube-transcript-api/　
+- 朝日新聞要約API：https://cl.asahi.com/api_data/longsum.html
+
