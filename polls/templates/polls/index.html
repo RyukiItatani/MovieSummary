@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block head %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+{% endblock %} 
+{% block title %}Index{% endblock %} 
+{% block content %}
+<div class="container">
+  <h1 class="pt-4">Youtube要約</h1>
+  <p>{{ error}}</p>
+  <div class="URL入力">
+      <form method="POST">
+          {% csrf_token %} {{ form.as_p }}
+          <button type="submit" class="btn btn-secondary">送信</button>
+      </form>
+  </div>
+  <h2>動画字幕本文</h2>
+  <div class="border border-secondary caption">{{caption}}</div>
+  <h2>要約内容</h2>
+  <div class="border border-secondary caption">{{summary}}</div>
+</div>
+
+
+{% endblock %} 
+{% block footer %} 
+  <hr>
+  <p>© 2021 Ryuki Itatani  All Rights Reserved.</p>
+{% endblock %}
